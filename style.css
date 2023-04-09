@@ -1,0 +1,62 @@
+:root {
+  --main-nav-font-color: limegreen;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background: black;
+}
+
+section {
+  display: flex;
+  width: 60%;
+  height: 80%;
+  border: solid 2px green;
+}
+
+aside {
+  width: 20%;
+  border: solid 1px red;
+}
+
+ul {
+  padding-inline-start: 10px;
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+  color: var(--main-nav-font-color);
+}
+
+li {
+  list-style: none;
+  color: var(--main-nav-font-color);
+  padding-inline-start: 20px;
+  margin: 5px 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+li > a {
+  font-size: 25px;
+  font-weight: normal;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: var(--main-nav-font-color);
+} 
+
+a:hover {
+  transition: ease-in 80ms;
+  color: darkgreen;
+}
+
+article {
+  width: 80%;
+  border: solid 1px blue;
+  color: white;
+  margin: 0px 20px;
+}
