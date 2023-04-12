@@ -1,0 +1,71 @@
+
+  $main-nav-font-color: limegreen
+  $left-panel-width: 25%
+  $right-panel-width: 75%
+
+
+body
+  display: grid
+  width: 100vw
+  height: 100vh
+  place-items: center
+  background: black
+
+
+body::-webkit-scrollbar 
+  display: none !important
+
+
+section 
+  display: flex
+  width: 60%
+  height: 70%
+  border: solid 5px green
+
+
+aside 
+  width: var(--left-panel-width)
+  border: solid 1px red
+
+
+ul 
+  padding-inline-start: 10px
+
+
+h2 
+  padding: 0
+  margin: 0
+  color: var(--main-nav-font-color)
+
+
+li 
+  list-style: none
+  color: var(--main-nav-font-color)
+  padding-inline-start: 20px
+  margin: 5px 0
+  font-weight: bold
+  font-size: 20px
+
+
+li
+  a 
+    font-size: 25px
+    font-weight: normal
+
+
+a:link, a:visited 
+  text-decoration: none
+  color: var(--main-nav-font-color)
+ 
+
+a:hover 
+  transition: ease-in 80ms
+  color: darkgreen
+
+
+article 
+  width: var(--right-panel-width)
+  border: solid 1px blue
+  color: white
+  margin: 0px 20px
+  padding: 0px 20px
