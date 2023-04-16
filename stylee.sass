@@ -1,7 +1,7 @@
 
-  $main-nav-font-color: limegreen
-  $left-panel-width: 25%
-  $right-panel-width: 75%
+$main-nav-font-color: limegreen
+$left-panel-width: 25%
+$right-panel-width: 75%
 
 
 body
@@ -24,7 +24,7 @@ section
 
 
 aside 
-  width: var(--left-panel-width)
+  width: $left-panel-width
   border: solid 1px red
 
 
@@ -35,12 +35,12 @@ ul
 h2 
   padding: 0
   margin: 0
-  color: var(--main-nav-font-color)
+  color: $main-nav-font-color
 
 
 li 
   list-style: none
-  color: var(--main-nav-font-color)
+  color: $main-nav-font-color
   padding-inline-start: 20px
   margin: 5px 0
   font-weight: bold
@@ -55,7 +55,7 @@ li
 
 a:link, a:visited 
   text-decoration: none
-  color: var(--main-nav-font-color)
+  color: $main-nav-font-color
  
 
 a:hover 
@@ -64,7 +64,7 @@ a:hover
 
 
 article 
-  width: var(--right-panel-width)
+  width: $right-panel-width
   border: solid 1px blue
   color: white
   margin: 0px 20px
