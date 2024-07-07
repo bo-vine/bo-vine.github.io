@@ -1,32 +1,95 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>My website</title>
-    <link rel="stylesheet" href="./styleshet.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>T&K Wedding Invitation</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+<!-- USEFUL FOR DOING THE NAVBAR ON ALL DEVICES  -->
+<!-- https://www.geeksforgeeks.org/how-to-scroll-to-an-element-inside-a-div-using-javascript/ -->
 
+<!-- LAST THING I DID: -->
+<!-- Trying to figure out how to position the icons above the text in the mobile -->
+<!-- nav menu without pushing the text out of the way -->
 <body>
-    <article>
-        <section id="picture-section">
-            <img style="width: 221px; height: 145px;" src="./6.jpg" alt="Image of a Kappa">
-        </section>
+  <nav>
+    <ul>
+      <li>
+        <button id="nav-video" class="btn nav">
+          Video
+        </button>
+        <div class="nav-icon"></div>
+      </li>
+      <li>
+        <button id="nav-invite" class="btn nav">
+          Invitation
+        </button>
+        <div class="nav-icon"></div>
+      </li>
+      <li>
+        <button id="nav-registry" class="btn nav">
+          Registry
+        </button>
+        <div class="nav-icon"></div>
+      </li>
+      <li>
+        <button id="nav-locale" class="btn nav">
+          locale
+        </button>
+        <div class="nav-icon"></div>
+      </li>
+    </ul>
+  </nav>
 
-        <section id="text-section">
-            <h1 id="heading1">Welcome to my website</h1>
-            <p class="paragraph">
-                Spicy jalapeno bacon ipsum dolor amet sirloin jerky ball tip chuck 
-                andouille corned beef ham hock kevin tenderloin pig kielbasa pork 
-                chop. Turkey sirloin pancetta, bresaola kielbasa picanha pig tail 
-                pork belly ham hock shank swine brisket boudin chicken. Shankle strip 
-                steak pastrami turkey kevin tongue t-bone. Biltong kevin ball 
-                tip ground round, tongue cow strip steak.
-                <a href="https://youtube.com">Hello</a>
-            </p>
-            <p class="paragraph">
-                Tail jowl pancetta jerky pork chop, corned beef t-bone hamburger kevin beef ribs strip steak. Turducken shankle ball tip kielbasa swine spare ribs landjaeger beef, leberkas doner boudin. Tail prosciutto sausage turducken spare ribs picanha. Short ribs fatback capicola chicken cow. Tail frankfurter short ribs spare ribs cow. Swine filet mignon cow, spare ribs ball tip chicken jerky capicola kielbasa bacon beef strip steak sausage salami chislic.
-    
-                Tail jowl spare ribs swine, strip steak kevin chicken alcatra biltong pancetta bresaola salami beef ribs. Tenderloin pork loin strip steak jowl leberkas. Flank picanha beef turkey tail brisket jowl ham hock bacon cow pork chop spare ribs pancetta. Ribeye cupim jowl frankfurter tongue leberkas biltong ham. Bresaola pancetta buffalo bacon.
-            </p>
-        </section>
-    </article>
+  <main>
+    <section id="section-video">
+      <iframe width="100%" 
+              height="100%" 
+              src="https://www.youtube.com/embed/ZYsy44_7DMM" 
+              title="YouTube&#39;s Biggest Copycats" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" 
+              allowfullscreen>
+      </iframe>
+    </section>
+
+    <section id="section-invitation">
+      <div style="width:100%;height:100%;" 
+            data-fillout-id="ohCsivJJ8Xus" 
+            data-fillout-embed-type="standard" 
+            data-fillout-inherit-parameters>
+      </div>
+      <script src="https://server.fillout.com/embed/v1/"></script>
+    </section>
+
+    <section id="section-registry">
+      <button id="amazon" class="btn reg">
+        <a href="https://www.amazon.com/wedding/share/Ktwedreg">
+          Amazon
+        </a>
+      </button>
+
+      <button id="target" class="btn reg">
+        <a href="https://www.target.com/gift-registry/gift/kandtwedding-1">
+          Target
+        </a>
+      </button>
+
+      <button id="macys" class="btn reg">
+        <a href="https://www.macys.com/registry/Kira-Bockemehl-Tyler-Ma/2433545">
+          Macy's
+        </a>
+      </button> 
+    </section>
+
+    <section id="section-locale"></section>
+
+    <section id="section-closing"></section>
+  </main>
+
+  <script src="index.js"></script>
 </body>
 </html>
