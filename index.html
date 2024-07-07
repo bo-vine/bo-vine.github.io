@@ -15,28 +15,30 @@
 <!-- nav menu without pushing the text out of the way -->
 <body>
   <nav>
+    <!-- Direct user's to scroll down -->
+    <div id="scoll-arrow" style="display:none;"></div>
     <ul>
-      <li>
+      <li section="section-video" onClick="scrollToElement(this)">
         <button id="nav-video" class="btn nav">
           Video
         </button>
         <div class="nav-icon"></div>
       </li>
-      <li>
+      <li section="section-invitation" onClick="scrollToElement(this)">
         <button id="nav-invite" class="btn nav">
           Invitation
         </button>
         <div class="nav-icon"></div>
       </li>
-      <li>
+      <li section="section-registry" onClick="scrollToElement(this)">
         <button id="nav-registry" class="btn nav">
           Registry
         </button>
         <div class="nav-icon"></div>
       </li>
-      <li>
-        <button id="nav-locale" class="btn nav">
-          locale
+      <li section="section-other" onClick="scrollToElement(this)">
+        <button id="nav-other" class="btn nav">
+          Other
         </button>
         <div class="nav-icon"></div>
       </li>
@@ -85,11 +87,11 @@
       </button> 
     </section>
 
-    <section id="section-locale"></section>
+    <section id="section-other"></section>
 
-    <section id="section-closing"></section>
+    <!-- MIGHT remove this and add to other section <section id="section-closing"></section> -->
   </main>
 
-  <script src="index.js"></script>
+  <script type="text/javascript" src="index.js"></script>
 </body>
 </html>

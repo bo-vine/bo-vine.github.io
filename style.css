@@ -38,7 +38,7 @@ main {
   display: flex;
   justify-content: space-between;
   -ms-flex-align: center;
-  height: 500%;
+  height: 480%;
   flex-direction: column;
 }
 
