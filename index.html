@@ -1,31 +1,95 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Webby Site</title>
-  <link rel="stylesheet" href="./stylee.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>T&K Wedding Invitation</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+<!-- USEFUL FOR DOING THE NAVBAR ON ALL DEVICES  -->
+<!-- https://www.geeksforgeeks.org/how-to-scroll-to-an-element-inside-a-div-using-javascript/ -->
 
+<!-- LAST THING I DID: -->
+<!-- Trying to figure out how to position the icons above the text in the mobile -->
+<!-- nav menu without pushing the text out of the way -->
 <body>
-  <section>
-    <aside>
-      <nav>
-        <ul>
-          <h2>\\<a href="#"> Tyler_Ma</a></h2>
-          <li>└<a href="#"> home</a></li>
-          <li>└<a href="#"> about_me</a></li>
-          <li>└<a href="#"> projects</a></li>
-          <li>└<a href="#"> contact_me</a></li>
-          <li>└<a href="#"> other_sites</a></li>
-        </ul>
-      </nav>
-    </aside>
-    <article>
-      <h1>
-        TYLER MA
-      </h1>
-      <p>
-        Bacon ipsum dolor amet laborum boudin do landjaeger, veniam beef ex pig. Chicken esse chislic, tail reprehenderit quis sed. Kevin brisket kielbasa, in do strip steak ham hock ipsum. In kielbasa short loin veniam elit cupidatat minim rump ipsum t-bone consectetur. Duis consequat meatloaf kielbasa reprehenderit ball tip, in corned beef eu shankle ribeye. Strip steak leberkas consectetur cupidatat in cupim. Dolore ipsum leberkas strip steak veniam jerky tail.
-      </p>
-    </article>
-  </section>
+  <nav>
+    <ul>
+      <li>
+        <button id="nav-video" class="btn nav">
+          Video
+        </button>
+        <div class="nav-icon"></div>
+      </li>
+      <li>
+        <button id="nav-invite" class="btn nav">
+          Invitation
+        </button>
+        <div class="nav-icon"></div>
+      </li>
+      <li>
+        <button id="nav-registry" class="btn nav">
+          Registry
+        </button>
+        <div class="nav-icon"></div>
+      </li>
+      <li>
+        <button id="nav-locale" class="btn nav">
+          locale
+        </button>
+        <div class="nav-icon"></div>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="section-video">
+      <iframe width="100%" 
+              height="100%" 
+              src="https://www.youtube.com/embed/ZYsy44_7DMM" 
+              title="YouTube&#39;s Biggest Copycats" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" 
+              allowfullscreen>
+      </iframe>
+    </section>
+
+    <section id="section-invitation">
+      <div style="width:100%;height:100%;" 
+            data-fillout-id="ohCsivJJ8Xus" 
+            data-fillout-embed-type="standard" 
+            data-fillout-inherit-parameters>
+      </div>
+      <script src="https://server.fillout.com/embed/v1/"></script>
+    </section>
+
+    <section id="section-registry">
+      <button id="amazon" class="btn reg">
+        <a href="https://www.amazon.com/wedding/share/Ktwedreg">
+          Amazon
+        </a>
+      </button>
+
+      <button id="target" class="btn reg">
+        <a href="https://www.target.com/gift-registry/gift/kandtwedding-1">
+          Target
+        </a>
+      </button>
+
+      <button id="macys" class="btn reg">
+        <a href="https://www.macys.com/registry/Kira-Bockemehl-Tyler-Ma/2433545">
+          Macy's
+        </a>
+      </button> 
+    </section>
+
+    <section id="section-locale"></section>
+
+    <section id="section-closing"></section>
+  </main>
+
+  <script src="index.js"></script>
 </body>
 </html>
