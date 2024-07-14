@@ -1,96 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>T&K Wedding Invitation</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<!-- USEFUL FOR DOING THE NAVBAR ON ALL DEVICES  -->
-<!-- https://www.geeksforgeeks.org/how-to-scroll-to-an-element-inside-a-div-using-javascript/ -->
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- LAST THING I DID: -->
-<!--  -->
-<body>
-  <nav>
-    <!-- Direct user's to scroll down -->
-    <div id="scoll-arrow" style="display:none;"></div>
-    <ul>
-      <li section="section-video" onClick="scrollToElement(this)">
-        <button id="nav-video" class="btn nav">
-          Video
-        </button>
-        <div class="nav-icon"></div>
-      </li>
-      <li section="section-invitation" onClick="scrollToElement(this)">
-        <button id="nav-invite" class="btn nav">
-          Invitation
-        </button>
-        <div class="nav-icon"></div>
-      </li>
-      <li section="section-registry" onClick="scrollToElement(this)">
-        <button id="nav-registry" class="btn nav">
-          Registry
-        </button>
-        <div class="nav-icon"></div>
-      </li>
-      <li section="section-other" onClick="scrollToElement(this)">
-        <button id="nav-other" class="btn nav">
-          Other
-        </button>
-        <div class="nav-icon"></div>
-      </li>
-    </ul>
-  </nav>
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-  <main>
-    <section id="section-video">
-      <div style="width: 100%; margin: 0 auto">
-        <iframe src="https://www.youtube.com/embed/ZYsy44_7DMM" 
-        title="YouTube&#39;s Biggest Copycats" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen>
-      </iframe>
-    </div>
-    </section>
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        
+        <title>Liquid navigation menu indicator - Bedimcode</title>
+    </head>
+    <body>
+        <!--=============== NAVBAR ===============-->
+        <nav class="nav">
+            <ul class="nav__list">
+                <a href="#home" class="nav__link active-link">
+                    <i class="ri-movie-2-line"></i>
+                    <span class="nav__name">
+                        Home
+                    </span>
+                </a>
 
-    <section id="section-invitation">
-      <div style="width:100%;height:100%;" 
-            data-fillout-id="ohCsivJJ8Xus" 
-            data-fillout-embed-type="standard" 
-            data-fillout-inherit-parameters>
-      </div>
-      <script src="https://server.fillout.com/embed/v1/"></script>
-    </section>
+                <a href="#invitation" class="nav__link">
+                    <i class="ri-quill-pen-line"></i>
+                    <span class="nav__name">
+                        Invitation
+                    </span>
+                </a>
 
-    <section id="section-registry">
-      <button id="amazon" class="btn reg">
-        <a href="https://www.amazon.com/wedding/share/Ktwedreg">
-          Amazon
-        </a>
-      </button>
+                <a href="#registry" class="nav__link">
+                    <i class="ri-gift-2-line"></i>
+                    <span class="nav__name">
+                        Registry
+                    </span>
+                </a>
 
-      <button id="target" class="btn reg">
-        <a href="https://www.target.com/gift-registry/gift/kandtwedding-1">
-          Target
-        </a>
-      </button>
+                <a href="#other" class="nav__link">
+                    <i class="ri-community-line"></i>
+                    <span class="nav__name">
+                        Other Info
+                    </span>
+                </a>
 
-      <button id="macys" class="btn reg">
-        <a href="https://www.macys.com/registry/Kira-Bockemehl-Tyler-Ma/2433545">
-          Macy's
-        </a>
-      </button> 
-    </section>
+                <a href="#closing" class="nav__link">
+                    <i class="ri-empathize-line"></i>
+                    <span class="nav__name">
+                        Closing
+                    </span>
+                </a>
 
-    <section id="section-other"></section>
+                <svg class="indicator" width="94" height="56" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="47" cy="28" rx="24" ry="28"/>
+                    <path d="M24 20C24 20 28 55.9999 48 56L0 55.9997C18 55.9998 24 20 24 20Z"/>
+                    <path d="M70 20C70 20 66 55.9999 46 56L94 55.9997C76 55.9998 70 20 70 20Z"/>
+                </svg>
+            </ul>
+        </nav>
 
-    <!-- MIGHT remove this and add to other section <section id="section-closing"></section> -->
-  </main>
+        <!--=============== MAIN ===============-->
+        <main class="container">
+            <section id="home">
+                <h2>Home</h2>
+                <iframe class="youtube-video" src="https://www.youtube.com/embed/yFvBZBkfvAk" title="Ranking Your DISGUSTING Bedrooms" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
 
-  <script type="text/javascript" src="index.js"></script>
-</body>
+            <section id="invitation">
+                <h2>Invitation Form</h2>
+                <div style="width:100%;height:100%;z-index: 0;" 
+                     data-fillout-id="ohCsivJJ8Xus" 
+                     data-fillout-embed-type="standard" 
+                     data-fillout-inherit-parameters>
+                </div>
+                <script src="https://server.fillout.com/embed/v1/"></script>
+            </section>
+
+            <section id="registry">
+                <h2>Registries</h2>
+                <ul class="reg__list">
+                    <a  class="reg__link"
+                        href="https://www.amazon.com/wedding/share/Ktwedreg">
+                        <span>Go to Amazon</span>
+                        <i class="ri-arrow-right-circle-line"></i>
+                    </a>
+                    <a  class="reg__link"
+                        href="https://www.macys.com/registry/Kira-Bockemehl-Tyler-Ma/2433545">
+                        <span>Go to Macy's</span>
+                        <i class="ri-arrow-right-circle-line"></i>
+                    </a>
+                    <a  class="reg__link"
+                        href="https://www.target.com/gift-registry/gift/kandtwedding-1">
+                        <span>Go to Target</span>
+                        <i class="ri-arrow-right-circle-line"></i>
+                    </a>
+                </ul>
+            </section>
+
+            <section id="other">
+                <h2>Other Info</h2>
+                
+            </section>
+
+            <section id="closing">
+                <h2>Closing</h2>
+
+            </section>
+        </main>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
