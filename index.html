@@ -66,9 +66,11 @@
                 <iframe class="youtube-video" src="https://www.youtube.com/embed/yFvBZBkfvAk" title="Ranking Your DISGUSTING Bedrooms" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </section>
 
-            <section id="invitation">
-                <h2>Invitation Form</h2>
-                <div style="width:100%;height:100%;z-index: 0;" 
+            <section id="invitation" style="position: relative;">
+                <h2 style="position:absolute; top: 0; left: 0; right: 0; 
+                           margin-left: auto; margin-right: auto;z-index: 1;">
+                    Invitation Form</h2>
+                <div style="width:100%; height:100%; z-index: 0;" 
                      data-fillout-id="ohCsivJJ8Xus" 
                      data-fillout-embed-type="standard" 
                      data-fillout-inherit-parameters>
@@ -76,9 +78,12 @@
                 <script src="https://server.fillout.com/embed/v1/"></script>
             </section>
 
-            <section id="registry">
-                <h2>Registries</h2>
-                <ul class="reg__list">
+            <section id="registry" style="position: relative;">
+                <h2 style="position: absolute; top: 0; left: 0; right: 0; 
+                           margin-left: auto; margin-right: auto;">
+                    Registries
+                </h2>
+                <ul class="reg__list" style="position: absolute;">
                     <a  class="reg__link"
                         href="https://www.amazon.com/wedding/share/Ktwedreg">
                         <span>Go to Amazon</span>
@@ -99,12 +104,35 @@
 
             <section id="other">
                 <h2>Other Info</h2>
-                
+                <div class="words-container">
+                    <p>
+                        For the closest location to the venue, with things to do, 
+                    </p>
+                    <p>
+                        We would recommend staying in <b>Rockwall, TX!</b>
+                    </p>
+                </div>
+                <div class="google-maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d107163.91687016659!2d-96.4685638!3d32.9003864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f2.5!2m1!1shotels%20around%20Rockwall%2C%20TX!5e0!3m2!1sen!2sus!4v1721096582375!5m2!1sen!2sus&zoom=50" 
+                            width="400" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="words-container">
+                    <p>More things to do in rockwall</p>
+                    <a href="https://www.tourtexas.com/destinations/rockwall-attractions">Click me!</a>
+                </div>                
             </section>
 
             <section id="closing">
                 <h2>Closing</h2>
-
+                <p style="margin: 2em 1em; text-align: center;">
+                    Can't wait to see you there!
+                </p>
             </section>
         </main>
 

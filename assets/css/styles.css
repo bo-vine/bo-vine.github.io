@@ -36,7 +36,8 @@ body {
   font-family: var(--body-font);
   height: 100%;
   width: 100%;
-  background-image: url('../img/stars.jpg');
+  background: url('../img/stars3.jpg') no-repeat center fixed;
+  background-size: cover;
   color: var(--text-color);
 }
 
@@ -58,12 +59,15 @@ a {
 /*Remove the property of 100vh, when inserting its content*/
 .container section {
   height: 100vh;
-  padding: 2rem 0;
+  margin: 2rem 0;
+  border-radius: 6px;
+  background-color: white;
 }
 
 .container h2 {
   text-align: center;
   color: var(--title-color);
+  padding-top: 1%;
 }
 
 /* Home Section */
@@ -117,6 +121,41 @@ a {
   text-align: end;
   padding: 1.5rem .5rem;
   vertical-align: middle;  
+}
+
+/* Other Info Section */
+
+#other {
+
+}
+
+.google-maps {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+}
+
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95% !important;
+  height: 95% !important;
+}
+
+.words-container {
+  width: 95%; 
+  margin: 2em 1em;
+}
+
+/* Closing Section */
+#closing {
+  background: url('../img/us.jpg') no-repeat center;
+  background-size: cover;
 }
 
 /* NAV Start */
