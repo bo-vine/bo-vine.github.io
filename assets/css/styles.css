@@ -125,10 +125,6 @@ a {
 
 /* Other Info Section */
 
-#other {
-
-}
-
 .google-maps {
   position: relative;
   padding-bottom: 75%;
@@ -143,8 +139,8 @@ a {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  width: 95% !important;
-  height: 95% !important;
+  width: 80% !important;
+  height: 80% !important;
 }
 
 .words-container {
