@@ -127,7 +127,7 @@ a {
 
 .google-maps {
   position: relative;
-  padding-bottom: 75%;
+  padding-bottom: 60%;
   height: 0;
   overflow: hidden;
 }
@@ -141,6 +141,7 @@ a {
   margin-right: auto;
   width: 80% !important;
   height: 80% !important;
+  box-shadow: 0 8px 32px hsla(231, 44%, 45%, .2);
 }
 
 .words-container {
