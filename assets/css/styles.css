@@ -162,6 +162,7 @@ a {
 #closing {
   background: url('../img/us.jpg') no-repeat center;
   background-size: cover;
+  margin-bottom: 15vh;
 }
 
 /* NAV Start */
