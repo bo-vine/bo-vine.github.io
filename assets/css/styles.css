@@ -89,6 +89,12 @@ a {
 }
 
 /* Registry Section */
+#registry {
+  background: url('../img/us-reg.jpg') no-repeat center;
+  background-size: cover;
+}
+
+
 #registry ul {
   width: 100%;
   height: 100%;
