@@ -141,6 +141,7 @@ a {
 }
 
 .google-maps {
+  position: relative;
   height: 100%;
 }
 
