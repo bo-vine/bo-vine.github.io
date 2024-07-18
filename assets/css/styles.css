@@ -149,9 +149,22 @@ a {
   height: 300px !important;
   box-shadow: 0 8px 32px hsla(231, 44%, 45%, .2);
 }
+.mobile-replace {
+  display: none;
+  margin: 0 auto;
+}
+
+.google-maps img {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
 
 .words-container {
-  margin: 2em 4em;
+  margin: 1em 4em;
 }
 
 /* Closing Section */
@@ -274,6 +287,9 @@ a {
   } 
   .google-maps iframe {
     display: none;
+  }
+  .mobile-replace {
+    display: block;
   }
 }
 
