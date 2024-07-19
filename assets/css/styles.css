@@ -297,6 +297,7 @@ a {
   .mobile-replace {
     display: block;
   }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -312,7 +313,7 @@ a {
   }
 
   .container h2 {
-    padding-top: 1%;
+    padding-top: 4%;
   }
   
 }
